@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
 import LongMenu from './menuList';
 
 const styles = theme => ({
@@ -65,7 +64,6 @@ class SideMenu extends React.Component {
             </div>   
           </Drawer>
         ); 
-      break;
       default:
         return (
           <Drawer
@@ -79,7 +77,6 @@ class SideMenu extends React.Component {
             </div>   
           </Drawer>
         );
-      break;
     }
     
   }

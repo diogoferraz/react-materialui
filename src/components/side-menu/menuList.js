@@ -23,8 +23,6 @@ const options = [
   'Pyxis',
 ];
 
-const ITEM_HEIGHT = 48;
-
 class LongMenu extends React.Component {
   state = {
     anchorEl: null,
