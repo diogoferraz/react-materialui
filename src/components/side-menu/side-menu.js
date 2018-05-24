@@ -23,8 +23,6 @@ const styles = theme => ({
 
 class SideMenu extends React.Component {
   state = {
-    windowHeight: undefined,
-    windowWidth: undefined,
     orientation: undefined,
   }
 
@@ -34,8 +32,6 @@ class SideMenu extends React.Component {
   }
 
   handleResize = () => this.setState({
-    windowHeight: window.innerHeight,
-    windowWidth: window.innerWidth,
     orientation: window.innerHeight > window.innerWidth ? 'portrait' : 'landscape',
   });
 
